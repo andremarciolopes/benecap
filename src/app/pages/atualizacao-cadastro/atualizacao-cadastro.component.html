@@ -1,0 +1,51 @@
+<div class="min-h-screen bg-gradient-to-br from-muted/30 to-background flex items-center justify-center p-4">
+  <app-card class="w-full max-w-md">
+    <app-card-header class="text-center space-y-4">
+      <div class="flex justify-center">
+        <img 
+          src="assets/benecap-logo.png" 
+          alt="Benecap Saúde" 
+          class="h-16 w-auto"
+        />
+      </div>
+      <app-card-title class="text-2xl font-bold">Atualização de Cadastro</app-card-title>
+      <app-card-description>
+        Acesse sua área para atualizar seus dados
+      </app-card-description>
+    </app-card-header>
+    <app-card-content>
+      <form (ngSubmit)="handleSubmit($event)" class="space-y-4">
+        <div class="space-y-2">
+          <app-label htmlFor="inscricao">Inscrição</app-label>
+          <app-input
+            id="inscricao"
+            type="text"
+            placeholder="Digite seu número de inscrição"
+            [(ngModel)]="inscricao"
+            name="inscricao"
+            required
+          />
+        </div>
+        <div class="space-y-2">
+          <app-label htmlFor="senha">Senha</app-label>
+          <app-input
+            id="senha"
+            type="password"
+            placeholder="Digite sua senha"
+            [(ngModel)]="senha"
+            name="senha"
+            required
+          />
+        </div>
+        <app-button type="submit" class="w-full bg-secondary hover:bg-secondary/90">
+          Acessar
+        </app-button>
+        <div class="text-center mt-4">
+          <a routerLink="/" class="text-sm text-muted-foreground hover:text-primary transition-colors">
+            ← Voltar para o site
+          </a>
+        </div>
+      </form>
+    </app-card-content>
+  </app-card>
+</div>

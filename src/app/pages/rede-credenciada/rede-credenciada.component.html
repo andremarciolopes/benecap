@@ -1,0 +1,25 @@
+<div class="lista-clinicas">
+  @for (clinica of clinicas; track clinica.nome) {
+    <div class="card">
+      <h3>{{ clinica.nome }}</h3>
+      
+      @if (clinica.endereco) {
+        <p><strong>📍 Endereço:</strong> {{ clinica.endereco }}</p>
+      }
+
+      <p><strong> 📞 Telefones:</strong> {{ clinica.telefones }}</p>
+
+      @if (clinica.whatsapp) {
+        <p class="zap"><strong>WhatsApp:</strong> {{ clinica.whatsapp }}</p>
+      }
+
+      @if (clinica.especialidades) {
+        <p class="especialidade"><strong>Especialidades:</strong> {{ clinica.especialidades }}</p>
+      }
+
+      @if (clinica.obs) {
+        <p class="obs"><em>{{ clinica.obs }}</em></p>
+      }
+    </div>
+  }
+</div>

@@ -1,0 +1,26 @@
+<section id="home" class="relative w-full overflow-hidden group bg-background">
+  <div class="relative w-full flex transition-transform duration-700 ease-in-out" style="transform: translateX(0%);">
+    @if (exibirPrimeira()) {
+    <div class="box-home min-w-full flex-shrink-0"><img src="/assets/benecap-hero.png"
+        alt="Saúde e Bem-estar para toda a família - Associe-se à Benecap por apenas R$ 180,00"
+        class="w-full h-auto object-cover"></div>
+    } @else {
+    <div class="box-home min-w-full flex-shrink-0"><img src="/assets/benecap-social.png"
+        alt="Siga-nos nas redes sociais - Instagram, TikTok e Facebook: benecap_df" class="w-full h-auto object-cover">
+    </div>
+    }
+  </div><button
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-accent-foreground h-10 w-10 absolute left-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background opacity-0 group-hover:opacity-100 transition-opacity z-10"><svg
+      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-left h-6 w-6">
+      <path d="m15 18-6-6 6-6"></path>
+    </svg></button><button
+    class="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 hover:text-accent-foreground h-10 w-10 absolute right-4 top-1/2 -translate-y-1/2 bg-background/80 hover:bg-background opacity-0 group-hover:opacity-100 transition-opacity z-10"><svg
+      xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+      stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-chevron-right h-6 w-6">
+      <path d="m9 18 6-6-6-6"></path>
+    </svg></button>
+  <div class="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10"><button
+      class="w-2 h-2 rounded-full transition-all bg-primary w-8"></button><button
+      class="w-2 h-2 rounded-full transition-all bg-background/60"></button></div>
+</section>
